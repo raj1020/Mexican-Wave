@@ -11,12 +11,15 @@ def mexican_wave(str)
     str = str.downcase
 str_split= str.split("")
 while i<str_split.count
-    str_split[i].upcase
-
+    if str_split[i]!= " "
+        str_split[i].upcase!
+        new_str.push(str_split.join)
+        str_split[i].downcase!
+    end
     i+=1
 
 end
-
+return new_str
 
 end
 
