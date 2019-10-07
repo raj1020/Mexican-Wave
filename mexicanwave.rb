@@ -5,17 +5,20 @@
 #Solution:
 
 def mexican_wave(str)
-    #Your code here
+   
     i=0
     new_str = []
-    str = str.downcase
-str_split= str.split("")
-while i<str_split.count
+    str = str.downcase # To convert the string into lowercase
+str_split= str.split("") # To convert the string into an array of individual letters and characters
+
+while i<str_split.count # To count the number of elements of the array
+
     if str_split[i]!= " "
         str_split[i].upcase!
-        new_str.push(str_split.join)
+        new_str.push(str_split.join) # To join the contents of the array into a single string and to push the string into a new array
         str_split[i].downcase!
     end
+
     i+=1
 
 end
